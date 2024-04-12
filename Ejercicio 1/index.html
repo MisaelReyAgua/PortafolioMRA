@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+        // Este es un comentario de una sola linea
+        document.write('Hola');
+        /* 
+        Este es un comentario 
+        de
+        varias
+        lineas
+        */
+
+        // var, let. const
+        var nombre;
+        var resultado;
+        function saludar(){
+            nombre = document.getElementById('nombre').value;
+            resultado = 'Bienvenido ' + nombre;
+            document.getElementById("res").innerHTML = resultado;
+        }
+    
+    </script>
+</head>
+<body>
+    <input type="text" name="nombre" id="nombre">
+    <button id="btnSaludar" onclick="saludar();">Saludar</button>
+    <label id="res"></label>
+</body>
+</html>
